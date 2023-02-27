@@ -1,0 +1,62 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: FastAPI",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "main:app"
+            ],
+            "jinja": true,
+            "justMyCode": true
+        },
+        {
+          "name": "Python: Debug Tests",
+          "type": "python",
+          "request": "launch",
+          "program": "${file}",
+          "purpose": ["debug-test"],
+          "console": "integratedTerminal",
+          "justMyCode": false,
+          "python": "/Users/malcolm/.pyenv/versions/anaconda3-2022.05/envs/fakepythonrepo3/bin/python"
+        },
+        {
+          "name": "Python: Invoke pylint pdb",
+          "type": "python",
+          "request": "launch",
+          "module": "invoke",
+          "python": "/Users/malcolm/.pyenv/versions/anaconda3-2022.05/envs/fakepythonrepo3/bin/python",
+          "args": [
+              "ci.pytest",
+              "--no-coverage",
+              "-vvvvv",
+              "--config-path=setup.cfg"
+          ],
+          "cwd": "${workspaceFolder}"
+      },
+        {
+          "name": "Python: pytest debugger",
+          "type": "python",
+          "request": "launch",
+          "module": "pytest",
+          "python": "/Users/malcolm/.pyenv/versions/anaconda3-2022.05/envs/fakepythonrepo3/bin/python",
+          "args": [
+              "--verbose",
+              "--showlocals",
+              "--tb=short",
+              "."
+          ],
+          "cwd": "${workspaceFolder}"
+      }
+    ]
+}

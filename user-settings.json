@@ -1,0 +1,87 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.productIconTheme": "material-product-icons",
+    "material-icon-theme.activeIconPack": "react",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "material-icon-theme.showWelcomeMessage": false,
+    "workbench.colorCustomizations": {
+        "errorLens.errorBackground": "#E06C751A",
+        "errorLens.errorForeground": "#E06C75",
+        "errorLens.warningBackground": "#D19A661A",
+        "errorLens.warningForeground": "#D19A66",
+        "errorLens.infoBackground": "#61AFEF1A",
+        "errorLens.infoForeground": "#61AFEF",
+        "errorLens.hintBackground": "#98C3791A",
+        "errorLens.hintForeground": "#98C379"
+    },
+    "diffEditor.wordWrap": "on",
+    "vsicons.dontShowNewVersionMessage": true,
+    "redhat.telemetry.enabled": false,
+    "editor.wordWrap": "on",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "132"
+    ],
+    "python.formatting.provider": "black",
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "explorer.confirmDelete": false,
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "[go.mod]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "gopls": {
+        "formatting.gofumpt": true,
+        "ui.diagnostic.analyses": {
+            "unusedparams": true,
+            "copylocks": true
+        },
+        "ui.semanticTokens": true,
+        "templateExtensions": [
+            "gotmpl",
+            "tmpl"
+        ],
+        "ui.diagnostic.staticcheck": true
+    },
+    "files.associations": {
+        "*.internal": "makefile"
+    },
+    "python.linting.pylintArgs": [
+        "--enable",
+        "F,E",
+        "--rcfile",
+        "${workspaceFolder}/pylintrc"
+    ],
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "python.defaultInterpreterPath": "/Users/malcolm/.pyenv/versions/anaconda3-2022.05",
+    "python.venvPath": "~/.pyenv/versions",
+    "python.logging.level": "debug",
+    "python.venvFolders": [
+        "~/.pyenv"
+    ],
+    "python.terminal.activateEnvironment": true,
+    "output.smartScroll.enabled": false,
+    "vscode-kubernetes.helm-path": "/Users/malcolm/.asdf/installs/helm/3.6.3/bin/helm",
+    "vscode-kubernetes.kubectl-path": "/Users/malcolm/.asdf/installs/kubectl/1.21.11/bin/kubectl",
+    "editor.guides.bracketPairs": true,
+    "vs-kubernetes": {
+        "vs-kubernetes.crd-code-completion": "enabled"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "window.zoomLevel": 1
+}

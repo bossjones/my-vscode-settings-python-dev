@@ -1,0 +1,259 @@
+{
+    "coverage-gutters.showLineCoverage": true,
+    "python.linting.pylintArgs": [
+        "--enable",
+        "F,E",
+        "--rcfile",
+        "${workspaceFolder}/lint-configs-python/python/pylintrc"
+    ],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "todohighlight.keywords": [
+        {
+            "text": "TODO:",
+            "color": "#fff",
+            "backgroundColor": "#ffbd2a",
+            "overviewRulerColor": "rgba(255,189,42,0.8)"
+        },
+        {
+            "text": "FIXME:",
+            "color": "#fff",
+            "backgroundColor": "#f06292",
+            "overviewRulerColor": "rgba(240,98,146,0.8)"
+        },
+        {
+            "text": "BOSSJONES:",
+            "color": "#fff",
+            "backgroundColor": "green"
+        },
+        {
+            "text": "DEBUG:",
+            "color": "#fff",
+            "backgroundColor": "blue"
+        },
+        {
+            "text": "REVIEW:",
+            "color": "#fff",
+            "backgroundColor": "yellow"
+        },
+        {
+            "text": "INFO:",
+            "color": "#fff",
+            "backgroundColor": "violet"
+        },
+        {
+            "text": "NOTE:",
+            "color": "#fff",
+            "backgroundColor": "grey"
+        },
+        {
+            "text": "EXAMPLE:",
+            "color": "#fff",
+            "backgroundColor": "teal"
+        },
+        {
+            "text": "SOURCE:",
+            "color": "#fff",
+            "backgroundColor": "maroon"
+        },
+        {
+            "text": "DISABLED:",
+            "color": "#fff",
+            "backgroundColor": "#f06292"
+        }
+    ],
+    "python.linting.mypyCategorySeverity.error": "Error",
+    "python.linting.mypyCategorySeverity.note": "Warning",
+    "python.linting.pylintCategorySeverity.warning": "Warning",
+    "python.linting.pylintCategorySeverity.error": "Error",
+    "python.linting.pylintCategorySeverity.convention": "Warning",
+    "python.linting.pylintCategorySeverity.fatal": "Error",
+    "python.linting.pylintCategorySeverity.refactor": "Warning",
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.indexing": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.tensorBoard.logDirectory": "runs",
+    "python.languageServer": "Pylance",
+    "python.linting.prospectorEnabled": false,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.fixAll": [
+        "source.convertImportFormat",
+        "source.unusedImports"
+    ],
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportUnusedImport": "none",
+        "reportMissingImports": "error",
+        "reportImportCycles": "error",
+        "reportUnusedVariable": "none",
+        "reportMissingTypeStubs": "none",
+        "reportUnknownMemberType": "none",
+        "reportUnusedFunction": "warning",
+        "reportUnusedClass": "warning"
+    },
+    "editor.formatOnSave": true,
+    "python.linting.lintOnSave": true,
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": false,
+        "editor.formatOnType": false,
+        "editor.formatOnSaveMode": "file",
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "python.formatting.provider": "none",
+    "python.formatting.autopep8Args": [
+        "--indent-size=4",
+        "--max-line-length",
+        "160",
+        "--ignore=E111, E114, E402, E501"
+    ],
+    "black-formatter.args": [
+        "--config",
+        "pyproject.toml",
+        "--force-exclude",
+        "site-packages"
+    ],
+    "isort.args": [
+        "--settings-file",
+        "pyproject.toml",
+        "--extend-skip-glob",
+        "*/site-packages/*",
+        "--profile",
+        "black"
+    ],
+    "python.defaultInterpreterPath": "/Users/malcolm/.pyenv/versions/anaconda3-2022.05/envs/fakepythonrepo3/bin/python3",
+    "output.smartScroll.enabled": true,
+    "files.exclude": {
+        ".idea/": true,
+        ".vscode/": true,
+        "__pycache__/": true,
+        "*.py[cod]": true,
+        "*$py.class": true,
+        "*.so": true,
+        ".Python": true,
+        "build/": true,
+        "develop-eggs/": true,
+        "dist/": true,
+        "downloads/": true,
+        "eggs/": true,
+        ".eggs/": true,
+        "lib/": true,
+        "lib64/": true,
+        "parts/": true,
+        "sdist/": true,
+        "var/": true,
+        "wheels/": true,
+        "share/python-wheels/": true,
+        "*.egg-info/": true,
+        ".installed.cfg": true,
+        "*.egg": true,
+        "MANIFEST": true,
+        "*.manifest": true,
+        "*.spec": true,
+        "pip-log.txt": true,
+        "pip-delete-this-directory.txt": true,
+        "htmlcov/": true,
+        ".tox/": true,
+        ".nox/": true,
+        ".coverage": true,
+        ".coverage.*": true,
+        ".cache": true,
+        "nosetests.xml": true,
+        "coverage.xml": true,
+        "*.cover": true,
+        "*.py,cover": true,
+        ".hypothesis/": true,
+        ".pytest_cache/": true,
+        "cover/": true,
+        "*.mo": true,
+        "*.pot": true,
+        "*.log": true,
+        "local_settings.py": true,
+        "db.sqlite3": true,
+        "db.sqlite3-journal": true,
+        "instance/": true,
+        ".webassets-cache": true,
+        ".scrapy": true,
+        "docs/_build/": true,
+        ".pybuilder/": true,
+        "target/": true,
+        ".ipynb_checkpoints": true,
+        "profile_default/": true,
+        "ipython_config.py": true,
+        "__pypackages__/": true,
+        "celerybeat-schedule": true,
+        "celerybeat.pid": true,
+        "*.sage.py": true,
+        ".env": true,
+        ".venv": true,
+        "env/": true,
+        "venv/": true,
+        "ENV/": true,
+        "env.bak/": true,
+        "venv.bak/": true,
+        ".spyderproject": true,
+        ".spyproject": true,
+        ".ropeproject": true,
+        "site": true,
+        ".mypy_cache/": true,
+        ".dmypy.json": true,
+        "dmypy.json": true,
+        ".pyre/": true,
+        ".pytype/": true,
+        "cython_debug/": true
+    },
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "*.meta.yaml"
+            ],
+            "url": "https://raw.githubusercontent.com/microsoft/vscode-python/main/schemas/conda-meta.json"
+        }
+    ],
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--show-column-numbers",
+        "--no-pretty",
+        "--config-file=${workspaceFolder}/lint-configs-python/python/mypy.ini"
+    ],
+    "isort.check": true,
+    "yaml.schemas": {
+        "https://docs.sourcery.ai/resources/sourcery_yaml_schema.json": ".sourcery.yaml",
+        "https://json.schemastore.org/pre-commit-config.json": ".pre-commit-config.yaml"
+    },
+    "ruff.fixAll": true,
+    "ruff.path": [
+        "ruff"
+    ],
+    "ruff.importStrategy": "fromEnvironment",
+    "ruff.interpreter": [
+        "/Users/malcolm/.pyenv/versions/anaconda3-2022.05/envs/fakepythonrepo3/bin/python3"
+    ],
+    "ruff.args": [
+        "--config=pyproject.toml"
+    ],
+    "python.testing.pytestPath": "py.test",
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "python.testing.pytestArgs": [
+        "--no-cov",
+        "--verbose",
+        "--rootdir",
+        "${workspaceFolder}/fakepythonrepo/tests/",
+        "${workspaceFolder}/fakepythonrepo/tests"
+    ],
+    "python.testing.cwd": "${workspaceFolder}",
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.envFile": "${workspaceFolder}/.env"
+}
